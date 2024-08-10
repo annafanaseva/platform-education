@@ -1,7 +1,13 @@
-import React from 'react';
+import Header from '../../components/Header/Header';
+import Main from '../../components/Main/Main';
 
-const HomePage = () => {
-  return <h1>hi</h1>;
+const HomePage: React.FC = () => {
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
+  );
 };
 
 export default HomePage;

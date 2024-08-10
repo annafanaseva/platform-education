@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--indent-base-double);
+  background-color: var(--grey);
+  border-radius: var(--border-radius-24);
+}
+
+.title {
+  color: var(--dark);
+  font-weight: 600;
+  font-size: var(--font-size-xxl);
+  max-width: 50%;
+}
+
+.info{
+  max-width: 50%;
+}

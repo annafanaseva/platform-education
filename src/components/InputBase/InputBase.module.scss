@@ -1,0 +1,50 @@
+.inputWrapper{
+  border-radius: var(--input-radius);
+  box-shadow: var(--simple-shadow);
+  height: var(--height);
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 10px;
+  position: relative;
+  background-color: var(--input-base-autofill-background-color);
+  &:hover{
+    box-shadow: var(--input-shadow);
+  }
+}
+
+/* margin */
+
+.marginLeft-base {
+  margin-inline-start: var(--indent-base);
+}
+
+.marginLeft-base-double {
+  margin-inline-start: var(--indent-base-double);
+}
+
+.marginLeft-base-half {
+  margin-inline-start: var(--indent-base-half);
+}
+
+.marginBottom-base {
+  margin-bottom: var(--indent-base);
+}
+
+.marginBottom-base-double {
+  margin-bottom: var(--indent-base-double);
+}
+
+.marginBottom-base-half {
+  margin-bottom: var(--indent-base-half);
+}
+
+/* size */
+
+.size--input-xs {
+}
+
+.size--input-s {
+}
+
+.size--input-m {
+}

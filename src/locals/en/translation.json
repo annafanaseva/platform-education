@@ -1,0 +1,12 @@
+{
+  "header": {
+    "items": {
+      "course": "Course",
+      "contact": "Contact",
+      "searchButtonText": "Search"
+    }
+  },
+  "main": {
+    "title": "Найди себя и новую профессию с нами!"
+  }
+}

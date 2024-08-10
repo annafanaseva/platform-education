@@ -1,12 +1,7 @@
-import React from 'react';
-import Router from '../router';
+import Router from '../Routes';
 
 const App: React.FC = () => {
-  return (
-    <div className="main">
-      <Router />
-    </div>
-  );
+  return <Router />;
 };
 
-export {App};
+export { App };

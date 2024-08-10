@@ -1,0 +1,41 @@
+html {
+  --full: 100%;
+
+  /* height */
+  --height: 32px;
+  --height-48: 48px;
+
+  /* button-size */
+  --button-xs: 90px;
+  --button-s: 100px;
+  --button-m: 110px;
+
+  /* button-icon-size */
+  --button-icon-xs: 16px;
+  --button-icon-s: 32px;
+  --button-icon-m: 48px;
+
+  /* font-size */
+  --font-size-xxs: 0.5rem;
+  --font-size-xs: 0.7rem;
+  --font-size-s: 1rem;
+  --font-size-m: 1.5rem;
+  --font-size-l: 2rem;
+  --font-size-xl: 2.5rem;
+  --font-size-xxl: 3rem;
+
+  /* indents */
+  --indent-base: 12px;
+  --indent-base-double: calc(var(--indent-base) * 2);
+  --indent-base-half: calc(var(--indent-base) / 2);
+
+  /* shadow */
+  --simple-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --input-shadow: rgba(66, 196, 218, 0.2) 0px 8px 24px;
+
+  /* radius */
+  --border-radius-24: 24px;
+  --button-radius: 10px;
+  --input-radius: 10px;
+  --border-radius-circle: 50%;
+}

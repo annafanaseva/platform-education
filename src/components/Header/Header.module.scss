@@ -1,0 +1,50 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  box-shadow:
+    rgb(50 50 93 / 25%) 0 50px 100px -20px,
+    rgb(0 0 0 / 30%) 0 30px 60px -30px;
+}
+
+.menu {
+  display: flex;
+}
+
+.logo {
+  max-width: 50px;
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.inputWrapper {
+  display: flex;
+  margin-inline-start: var(--indent-base);
+}
+
+.buttonAbsolute{
+  margin-left: -16px;
+}
+
+.icon {
+  margin-right: 20px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+}
+
+.iconLang {
+  margin-right: 20px;
+  color: #fff;
+  background-color: #42c4da;
+  border: none;
+}
