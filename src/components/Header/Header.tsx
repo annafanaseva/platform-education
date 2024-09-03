@@ -8,14 +8,20 @@ import ButtonIcon from '../ButtonIcon/ButtonIcon';
 import InputBase from '../InputBase/InputBase';
 import Logo from '../../assets/logo.svg';
 import { getLangIcon } from '../../utils/icons';
-
+import { useSelector, useDispatch } from 'react-redux';
 import styles from './Header.module.scss';
+import { RootState } from '../../store/store';
+import { changeLanguage } from '../../store/globalSlice';
 
 const { Header } = Layout;
 
 const HeaderComponent: React.FC = () => {
   const [lang, setLang] = useState('ru');
   const { t, i18n } = useTranslation();
+
+  const languagee = useSelector((state: RootState) => state.global.language);
+  const dispatch = useDispatch();
+  console.log(languagee);
 
   const changeLang = (language: string) => {
     i18n.changeLanguage(language);
@@ -24,9 +30,11 @@ const HeaderComponent: React.FC = () => {
   const toggleLang = (lang: string) => {
     if (lang === 'ru') {
       setLang('en');
+      dispatch(changeLanguage(lang));
       changeLang('en');
     } else if (lang === 'en') {
       setLang('ru');
+      dispatch(changeLanguage(lang));
       changeLang('ru');
     }
   };
