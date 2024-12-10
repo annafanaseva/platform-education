@@ -1,22 +1,19 @@
 import { useTranslation } from 'react-i18next';
-
-import { RootState } from '../../store/store';
+import ButtonBase from '../ButtonBase/ButtonBase';
 
 import styles from './Main.module.scss';
 
 const Main: React.FC = () => {
-  const { t, i18n } = useTranslation();
-  const languagee = useSelector((state: RootState) => state.global.language);
-
-  const changeLang = (language: string) => {
-    i18n.changeLanguage(language);
-  };
-
+  const { t } = useTranslation();
   return (
     <div className="layout">
       <div className={styles.main}>
         <h1 className={styles.title}>{t('main.title')}</h1>
-        <div className={styles.info}></div>
+        <div className={styles.info}>
+          <h2 className={styles.subtitle}>{t('main.subtitle')}</h2>
+          <p className={styles.text}>{t('main.text')}</p>
+          <ButtonBase color="primary" size="--button-m" text={t('main.button')} />
+        </div>
       </div>
     </div>
   );

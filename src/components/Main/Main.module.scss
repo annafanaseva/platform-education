@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 300px;
   padding: var(--indent-base-double);
   background-color: var(--grey);
   border-radius: var(--border-radius-24);
@@ -11,9 +12,17 @@
   color: var(--dark);
   font-weight: 600;
   font-size: var(--font-size-xxl);
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .info{
-  max-width: 50%;
+  max-width: 40%;
+  margin-left: var(--indent-base-double);
+}
+
+.subtitle{
+  margin-bottom: var(--indent-base-double);
+}
+.text{
+  margin-bottom: var(--indent-base-double);
 }

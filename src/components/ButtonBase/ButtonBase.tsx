@@ -6,7 +6,6 @@ import styles from './ButtonBase.module.scss';
 
 const ButtonBase = (props: ButtonBaseProps) => {
   const { text, size, color, marginL, marginB, fontSize = '', disabled, handleClick, classes = '' } = props;
-
   const sizeKey = `size${size}`;
 
   const marginLKey = `marginLeft-${marginL}`;

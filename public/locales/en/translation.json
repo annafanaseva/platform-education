@@ -1,0 +1,15 @@
+{
+  "header": {
+    "items": {
+      "course": "Course",
+      "contact": "Contact",
+      "searchButtonText": "Search"
+    }
+  },
+  "main": {
+    "title": "Unlock your potential in IT with our courses!",
+    "subtitle": "Educational platform",
+    "text": "Master the skills of the future! Take our BloomLearn courses and become a sought-after IT specialist.",
+    "button": "More details"
+  }
+}

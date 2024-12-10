@@ -8,37 +8,26 @@ import ButtonIcon from '../ButtonIcon/ButtonIcon';
 import InputBase from '../InputBase/InputBase';
 import Logo from '../../assets/logo.svg';
 import { getLangIcon } from '../../utils/icons';
-import { useSelector, useDispatch } from 'react-redux';
 import styles from './Header.module.scss';
-import { RootState } from '../../store/store';
-import { changeLanguage } from '../../store/globalSlice';
-
 const { Header } = Layout;
+
+enum LanguageType {
+  RU = 'ru',
+  EN = 'en',
+}
 
 const HeaderComponent: React.FC = () => {
   const [lang, setLang] = useState('ru');
   const { t, i18n } = useTranslation();
-
-  const languagee = useSelector((state: RootState) => state.global.language);
-  const dispatch = useDispatch();
-  console.log(languagee);
-
-  const changeLang = (language: string) => {
-    i18n.changeLanguage(language);
-  };
-
-  const toggleLang = (lang: string) => {
-    if (lang === 'ru') {
-      setLang('en');
-      dispatch(changeLanguage(lang));
-      changeLang('en');
-    } else if (lang === 'en') {
-      setLang('ru');
-      dispatch(changeLanguage(lang));
-      changeLang('ru');
+  const toggleLang = () => {
+    if (lang === LanguageType.RU) {
+      i18n.changeLanguage(LanguageType.EN);
+      setLang(LanguageType.EN);
+    } else {
+      i18n.changeLanguage(LanguageType.RU);
+      setLang(LanguageType.RU);
     }
   };
-
   return (
     <div>
       <Header className={styles.header}>
@@ -68,7 +57,7 @@ const HeaderComponent: React.FC = () => {
               size="--iconButton-s"
               marginL="base"
               icon={getLangIcon(lang)}
-              handleClick={() => toggleLang(lang)}
+              handleClick={toggleLang}
             ></ButtonIcon>
           </>
         </div>
